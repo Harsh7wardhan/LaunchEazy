@@ -102,7 +102,7 @@
 /* Styles for normal laptops (1536px) */
 @media screen and (min-width: 1536px) {
     .DropdownContent {
-        bottom: 30%;
+        bottom: 26%;
         left: 80%;
     }
 }
