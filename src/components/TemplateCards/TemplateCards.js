@@ -8,27 +8,6 @@ function TemplateCards(props) {
         <>
             <p className={classes.Heading}>{props.categoryName}</p>
 
-            {/* <div className={classes.CardContainerMobile}>
-
-                <div className={classes.ScrollingContainer}>
-                    {props.cards.map((card, index) => (
-                        <div key={index} className={classes.Card}>
-                            {card.new && (
-                                <div className={classes.CrownCont}>
-                                    <img className={classes.CrownImg} src={CrownImg} />
-                                </div>
-                            )}
-                            <img className={classes.CardImg} src={card.imgSrc} alt={card.title} />
-
-                            <div className={classes.CardTextDiv}>
-                                <p className={classes.CardText}>{card.text}</p>
-                                <button className={classes.Button}>Use this</button>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-            </div> */}
             <div className={classes.CardContainerMobile}>
                 <div className={classes.ScrollingContainer}>
                     {props.cards.map((card, index) => (

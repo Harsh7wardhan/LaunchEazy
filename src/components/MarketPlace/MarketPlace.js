@@ -74,17 +74,7 @@ function MarketPlace() {
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
     };
-    // const categoriesNew = [
 
-    // ];
-
-
-    // const filteredTemplates = templates.filter((template) => {
-    //     return (
-    //         (selectedCategories.length === 0 || selectedCategories.includes(template.category)) &&
-    //         (template.title.toLowerCase().includes(searchText.toLowerCase()))
-    //     );
-    // });
     const filteredTemplates = categoriesNew.reduce((filtered, category) => {
         if (
             selectedCategories.length === 0 ||
@@ -133,7 +123,7 @@ function MarketPlace() {
             sortedCategories.forEach((category) => {
                 category.cards.sort((a, b) => b.popularity - a.popularity);
             });
-        } else if (value === "A-Z") {  // Use "A-Z" instead of "AZ"
+        } else if (value === "A-Z") {  
             // Sort the cards alphabetically within each category
             sortedCategories.forEach((category) => {
                 category.cards.sort((a, b) => a.text.localeCompare(b.text));
@@ -185,11 +175,7 @@ function MarketPlace() {
 
                         <div className={classes.SortByContainer}>
                             <p className={classes.SortText}>Sort By</p>
-                            {/* <select className={classes.SortBySelect} value={sortBy} onChange={(e) => handleSortByChange(e.target.value)}>
-                                <option className={classes.OptionText} value="Recent">Recent</option>
-                                <option className={classes.OptionText} value="Popular">Popular</option>
-                                <option className={classes.OptionText} value="AZ">A-Z</option>
-                            </select> */}
+                            
                             <NewDropDown
                                 options={sortOptions}
                                 defaultOption={sortBy}
@@ -223,15 +209,7 @@ function MarketPlace() {
                             </div>
                         </div>
 
-                        {/* <div className={classes.SortByContainer2}>
-                            <p className={classes.SortText}>Filter By</p>
-                            <select className={classes.SortBySelect} value={selectedCategories} onChange={(e) => handleCategoryChange(e.target.value)}>
-                                <option className={classes.OptionText} value="">All Categories</option>
-                                {categories.map((category) => (
-                                    <option className={classes.OptionText} value={category} key={category}>{category}</option>
-                                ))}
-                            </select>
-                        </div> */}
+                      
                     </div>
 
                     <div className={classes.TemplateList}>
