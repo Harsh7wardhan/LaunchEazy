@@ -1,0 +1,126 @@
+.DropdownHeader {
+    display: flex;
+}
+
+.DDtext {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: var(--blue-blue-50-main, #4589FF);
+}
+
+.DropdownArrow {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.75em;
+}
+
+.SortBySelect1 {
+    border-radius: 8px;
+    background: var(--neutrals-white, #FFF);
+    box-shadow: 0px 2px 12px 0px rgba(22, 22, 22, 0.16);
+    padding: 0.5em;
+}
+
+.OptionText {
+    color: #262626;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0.3em;
+}
+
+.OptionText:hover {
+    border-radius: 4px;
+    background: var(--neutrals-grey-10, #F4F4F4);
+    padding: 0.2em;
+}
+
+.DropdownContent {
+    border: 1px solid grey;
+    border-radius: 15px;
+    background-color: white;
+    padding: 0.8em;
+    position: absolute;
+    bottom: 18%;
+    left: 48%;
+}
+
+@media screen and (min-width :45em) {
+    .DropdownHeader {
+        display: flex;
+    }
+
+    .DDtext {
+        font-size: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .DropdownArrow {
+        width: 20px;
+        height: 20px;
+        margin-top: 1em;
+    }
+
+    .SortBySelect1 {
+        border-radius: 8px;
+        background: var(--neutrals-white, #FFF);
+        box-shadow: 0px 2px 12px 0px rgba(22, 22, 22, 0.16);
+        padding: 0.5em;
+    }
+
+    .OptionText {
+        color: #262626;
+        font-size: 0.8em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 0.3em;
+    }
+
+    .OptionText:hover {
+        border-radius: 4px;
+        background: var(--neutrals-grey-10, #F4F4F4);
+        padding: 0.2em;
+    }
+
+    .DropdownContent {
+        border: 1px solid grey;
+        border-radius: 15px;
+        background-color: white;
+        padding: 0.4em 1em;
+        position: absolute;
+        bottom: 25%;
+        left: 80%;
+    }
+}
+
+
+
+/* Styles for normal laptops (1536px) */
+@media screen and (min-width: 1536px) {
+    .DropdownContent {
+        bottom: 30%;
+        left: 80%;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .DropdownContent {
+        bottom: 51%;
+        left: 68%;
+    }
+}
+@media screen and (max-width: 1336px) {
+    .DropdownContent {
+        bottom: 30%;
+        left: 86%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .DropdownContent {
+        bottom: 18%;
+        left: 47%;
+    }
+}

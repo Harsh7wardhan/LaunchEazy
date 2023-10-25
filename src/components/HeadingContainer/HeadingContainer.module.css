@@ -1,0 +1,198 @@
+.Section {
+    padding: 2em;
+    background: linear-gradient(180deg, #DEFBE6 0%, rgba(222, 251, 230, 0.00) 100%);
+}
+
+.TopText {
+    color: #6F6F6F;
+    /* font-family: Helvetica Neue; */
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    margin-left: 0.3em;
+}
+
+.BottomText {
+    color: #525252;
+    /* font-family: "Helvetica Neue"; */
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    align-self: stretch;
+}
+
+.MainTextBottom {
+    color: #121010;
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    margin-top: -2.6em;
+}
+
+.Skill {
+    /* color: #008FFB; */
+    color: #24A148;
+    /* font-family: Helvetica Neue; */
+    font-size: 2.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -1.28px;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+}
+
+.MainText {
+    margin: 0;
+    height: 10em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+    display: block;
+}
+
+.Animate1 {
+    animation: animateText1 5s ease-in-out infinite;
+}
+
+.Animate2 {
+    animation: animateText2 5s ease-in-out infinite;
+}
+
+.Animate3 {
+    animation: animateText3 5s ease-in-out infinite;
+}
+
+/* 5% to come in 
+5% to go out
+33% to stay */
+
+@keyframes animateText1 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    5% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    33.33% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    38.33% {
+        transform: translateY(-1.3em);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateY(-1.3em);
+        opacity: 0;
+    }
+}
+
+@keyframes animateText2 {
+    0% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+
+    33.33% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+
+    38.33% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    59.66% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    64.66% {
+        transform: translateY(-1.3em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-1.3em);
+        opacity: 0;
+    }
+}
+
+@keyframes animateText3 {
+    0% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+
+    59.66% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+
+    64.66% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    87.99% {
+        transform: translateY(0em);
+        opacity: 1;
+    }
+
+    92% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(1.3em);
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width :45em) {
+
+    .ParentDiv {
+        padding: 2em;
+    }
+
+    .MainTextBottom {
+        margin-top: -2em;
+        font-size: 3em;
+    }
+
+    .Skill {
+        /* color: #008FFB; */
+        color: #24A148;
+        /* font-family: Helvetica Neue; */
+        font-size: 3em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -1.28px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        margin: 0;
+    }
+
+  
+}

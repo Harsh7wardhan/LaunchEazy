@@ -1,0 +1,306 @@
+.Section {
+    padding: 0em 2em 2em 2em;
+}
+
+.Left {
+    display: none;
+}
+
+.RedBorder {
+    border: 2px solid red;
+}
+
+.Search {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--neutrals-grey-30-borders, #C6C6C6);
+    background: var(--neutrals-white, #FFF);
+    width: 96%;
+    position: relative;
+}
+
+.SearchIcons {
+    margin-right: 2em;
+}
+
+.SearchIcons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.SearchIcons .SearchIconHover {
+    opacity: 0;
+}
+
+.Search:hover {
+    box-shadow: 0px 0px 0px 3px rgba(18, 16, 16, 0.12);
+}
+
+.Search:hover .SearchIconHover {
+    opacity: 1;
+}
+
+
+.SearchBar {
+    border: none;
+    outline: none;
+    caret-color: #4589FF;
+}
+
+.SearchIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.SortBySelect1 {
+    border-radius: 8px;
+    background: var(--neutrals-white, #FFF);
+    box-shadow: 0px 2px 12px 0px rgba(22, 22, 22, 0.16);
+    padding: 0.5em;
+    position: absolute;
+    top: 78%;
+}
+
+.SortByContainer {
+    display: flex;
+    padding: 0em 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap: 2px;
+    border-radius: 40px;
+    border: 1px solid var(--neutrals-grey-30-borders, #C6C6C6);
+    background: var(--neutrals-white, #FFF);
+}
+
+.SortByContainer:hover {
+    border: 1px solid var(--neutrals-grey-100, #161616);
+    background: var(--neutrals-grey-20, #E0E0E0);
+}
+
+.SortByContainer2 {
+    display: flex;
+    padding: 0em 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    gap: 2px;
+    border-radius: 40px;
+    border: 1px solid var(--neutrals-grey-30-borders, #C6C6C6);
+    background: var(--neutrals-white, #FFF);
+}
+
+.SortByContainer2:hover {
+    border: 1px solid var(--neutrals-grey-100, #161616);
+    background: var(--neutrals-grey-20, #E0E0E0);
+}
+
+.SortText {
+    color: #161616;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 0.5em;
+}
+
+.SortImg {
+    margin-right: -0.3em;
+}
+
+.TemplateList {
+    margin-top: 2em;
+}
+
+.CheckBox {
+    accent-color: black;
+}
+
+.DropdownHeader {
+    display: flex;
+}
+
+.DDtext {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    color: var(--blue-blue-50-main, #4589FF);
+}
+
+.DropdownArrow {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.8em;
+}
+
+.SortBySelect1 {
+    border-radius: 8px;
+    background: var(--neutrals-white, #FFF);
+    box-shadow: 0px 2px 12px 0px rgba(22, 22, 22, 0.16);
+    padding: 0.5em;
+}
+
+.OptionText {
+    color: #262626;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0.3em;
+}
+
+.OptionText:hover {
+    border-radius: 4px;
+    background: var(--neutrals-grey-10, #F4F4F4);
+}
+
+@media screen and (min-width: 45em) {
+
+    .Section {
+        padding: 0em 2em 2em 2em;
+    }
+
+    .ParentContainer {
+        display: flex;
+        padding: 2em;
+        gap: 4em;
+    }
+
+    .Left {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .Right {
+    width: 80%;
+} */
+
+    .CategorLabel {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        align-self: stretch;
+    }
+
+    .CategorLabelText {
+        color: #161616;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .FiltersContainer {
+        display: flex;
+        gap: 42%;
+        margin-bottom: 2em;
+    }
+
+    .Search {
+        display: flex;
+        padding: 0.5em;
+        align-items: center;
+        gap: 4px;
+        align-self: stretch;
+        border-radius: 6px;
+        border: 1px solid var(--neutrals-grey-30-borders, #C6C6C6);
+        background: var(--neutrals-white, #FFF);
+        width: 35%;
+        position: relative;
+        height: 30px;
+        margin-top: 1em;
+    }
+
+    .SearchIcons {
+        margin-right: 2em;
+    }
+
+    .SearchIcons img {
+        width: 24px;
+        height: 24px;
+        transition: opacity 0.3s, box-shadow 0.3s;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .SearchIcons .SearchIconHover {
+        opacity: 0;
+    }
+
+    .Search:hover {
+        border-radius: 8px;
+        box-shadow: 0px 0px 0px 3px rgba(18, 16, 16, 0.12);
+    }
+
+    .Search:hover .SearchIconHover {
+        opacity: 1;
+    }
+
+    .SearchBar {
+        border: none;
+        outline: none;
+        caret-color: #4589FF;
+    }
+
+    .SearchIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .SortBySelect {
+        border: none;
+        outline: none;
+        font-size: 0.9em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url('/src/assets/arrow_drop_down.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 1.5em;
+        color: #4589FF;
+        padding-left: 0.5em;
+    }
+
+    .SortByContainer {
+        display: flex;
+        padding: 0em 1em;
+        align-items: center;
+        gap: 2px;
+        border-radius: 40px;
+        border: 1px solid var(--neutrals-grey-30-borders, #C6C6C6);
+        background: var(--neutrals-white, #FFF);
+    }
+
+    .SortByContainer2 {
+        display: none;
+    }
+
+    .SortText {
+        color: #161616;
+        font-size: 0.9em;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        padding-left: 0.5em;
+    }
+
+    .SortImg {
+        margin-right: -0.3em;
+    }
+
+    .TemplateList {
+        margin-top: 1em;
+    }
+
+
+}
