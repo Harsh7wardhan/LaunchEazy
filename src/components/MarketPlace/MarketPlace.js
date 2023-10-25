@@ -235,6 +235,9 @@ function MarketPlace() {
                     </div>
 
                     <div className={classes.TemplateList}>
+                        {filteredTemplates.length === 0 && (
+                            <p className={classes.NoResultsMessage}> No matching results found  :-/ </p>
+                        )}
                         {filteredTemplates.map((category, index) => (
                             <TemplateCards
                                 key={index}
